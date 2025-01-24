@@ -1,2 +1,0 @@
-ninja: Entering directory `/Users/arunimatripathy/AndroidStudioProjects/todo/sdk/.cxx/Debug/382v5454/x86_64'
-ninja: no work to do.
