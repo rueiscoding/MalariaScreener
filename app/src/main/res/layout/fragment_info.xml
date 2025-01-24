@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Back Arrow -->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/backButtonLayout"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:background="@drawable/back_arrow_background"-->
+<!--        android:padding="8dp"-->
+<!--        android:gravity="center_vertical|start"-->
+<!--        android:layout_alignParentTop="true">-->
+
+<!--        &lt;!&ndash; Back Arrow Image &ndash;&gt;-->
+<!--        <ImageView-->
+<!--            android:id="@+id/backArrow"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:src="@drawable/arrow_back_24dp_5f6368_fill0_wght400_grad0_opsz24"-->
+<!--            app:tint="@android:color/white" />-->
+
+<!--    </LinearLayout>-->
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Metadata Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/slide_name_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Slide Name: "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/slide_name_editable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:hint="IMG1000.jpg"
+                        android:inputType="text"
+                        android:padding="2dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:minHeight="48dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/patient_name_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patient Name: "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/patient_name_editable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="John Doe"
+                        android:inputType="text"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:padding="2dp"
+                        android:minHeight="48dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/patient_id_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patient Id: "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/patient_id_editable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="123456789"
+                        android:inputType="text"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:padding="2dp"
+                        android:minHeight="48dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Image Section -->
+            <ImageView
+                android:id="@+id/photo_output"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="Photo output from model" />
+
+            <!-- Confidence Slider Section -->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginBottom="16dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/confidence_label"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Confidence: 70%"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <com.google.android.material.slider.Slider-->
+<!--                    android:id="@+id/confidenceSlider"-->
+<!--                    android:contentDescription="confidence slider"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:stepSize="5"-->
+<!--                    android:value="70"-->
+<!--                    android:valueFrom="0"-->
+<!--                    android:valueTo="100"/>-->
+<!--            </LinearLayout>-->
+
+            <!-- Diagnostic Summary -->
+            <TextView
+                android:id="@+id/diagnostic_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diagnostic Summary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/diagnostic_summary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is where the diagnostic results will be displayed."
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="#f2f2f1"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+WBC
+RBC
+Platelets
+P. falciparum
+P. ovale
+P. malariae
+P. vivax
+Babesia
+Trypanosoma brucei
