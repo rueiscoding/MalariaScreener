@@ -225,13 +225,13 @@ class ImageProcessor(
         val class_counts = IntArray(9) { 0 }
 
         boxes.forEach { box ->
-            if(box.cls in 3 ..8 ){
+            //if(box.cls in 3 ..8 ){
                 val x1 = (box.x1 * original.width).toInt()
                 val y1 = (box.y1 * original.height).toInt()
                 val x2 = (box.x2 * original.width).toInt()
                 val y2 = (box.y2 * original.height).toInt()
                 canvas.drawRect(x1.toFloat(), y1.toFloat(), x2.toFloat(), y2.toFloat(), paint)
-            }
+            //}
 
             if (box.cls in class_counts.indices) {
                 class_counts[box.cls] += 1
