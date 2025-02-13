@@ -2,6 +2,11 @@
 .gradle/
 build/
 
+# other large files
+sdk/build/
+sdk/native/
+app/src/main/assets/*.tflite
+
 # Local configuration file (sdk path, etc)
 local.properties
 
