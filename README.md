@@ -1,6 +1,6 @@
 # MalariaScreener
 
-This app is inspired by the [NIH malaria screener](https://github.com/LHNCBC/MalariaScreener), but with expanded functionality. While the NIH app focuses only on screening for Plasmodium Falciparum, this app is designed to detect six major parasites that infect humans:
+This app is inspired by the [NIH malaria screener](https://github.com/LHNCBC/MalariaScreener), but with expanded functionality. While the NIH app focuses only on screening for *Plasmodium Falciparum*, this app is designed to detect six major parasites that infect humans:
 
 - **P. falciparum**
 - **P. ovale**
@@ -8,6 +8,7 @@ This app is inspired by the [NIH malaria screener](https://github.com/LHNCBC/Mal
 - **P. vivax**
 - **Babesia**
 - **Trypanosoma brucei**
+
 The type of parasite infecting the host is crucial to determine the treatment plan as symptoms depend on which parasite is involved. This screener helps differentiate between these six parasites by drawing bounding boxes around each parasite detected in thin blood smear images.
 
 ## Challenges and Future Considerations:
@@ -21,7 +22,16 @@ However, when integrating the model into an Android application, the model had t
 
 ## App in Action:
 
-<img src="images/screener_homepage.png" alt="Home Page" width="46%" style="display: inline-block; margin-right: 2%">
-<img src="images/screener_infopage.png" alt="Info Page" width="46%" style="display: inline-block;">
+<p>
+  <img src="images/screener_homepage.png" alt="Home Page" width="48%" style="display: inline-block; margin-right: 4%">
+  <br>
+  <m>Home Page</m>
+</p>
+
+<p>
+  <img src="images/screener_infopage.png" alt="Parasite Detection" width="48%" style="display: inline-block;">
+  <br>
+  <m>Parasite Detection</m>
+</p>
 
 
